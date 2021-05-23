@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9F2856FA2646CF9D00438F13 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F2856F92646CF9D00438F13 /* main.cpp */; };
+		9F4939482650FF2200E7C54E /* Bj_14592.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F4939472650FF2200E7C54E /* Bj_14592.cpp */; };
+		9FE68E18264E952300C64208 /* Bj_10828.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9FE68E17264E952300C64208 /* Bj_10828.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,8 @@
 /* Begin PBXFileReference section */
 		9F2856F62646CF9D00438F13 /* 2021_GIST_DS */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2021_GIST_DS; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F2856F92646CF9D00438F13 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		9F4939472650FF2200E7C54E /* Bj_14592.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bj_14592.cpp; sourceTree = "<group>"; };
+		9FE68E17264E952300C64208 /* Bj_10828.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bj_10828.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,8 @@
 		9F2856ED2646CF9D00438F13 = {
 			isa = PBXGroup;
 			children = (
-				9F2856F82646CF9D00438F13 /* 2021_GIST_DS */,
+				9FE68E16264E950600C64208 /* BeakJoon */,
+				9F2856F82646CF9D00438F13 /* GIST_HW */,
 				9F2856F72646CF9D00438F13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,12 +59,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9F2856F82646CF9D00438F13 /* 2021_GIST_DS */ = {
+		9F2856F82646CF9D00438F13 /* GIST_HW */ = {
 			isa = PBXGroup;
 			children = (
 				9F2856F92646CF9D00438F13 /* main.cpp */,
 			);
-			path = 2021_GIST_DS;
+			path = GIST_HW;
+			sourceTree = "<group>";
+		};
+		9FE68E16264E950600C64208 /* BeakJoon */ = {
+			isa = PBXGroup;
+			children = (
+				9FE68E17264E952300C64208 /* Bj_10828.cpp */,
+				9F4939472650FF2200E7C54E /* Bj_14592.cpp */,
+			);
+			path = BeakJoon;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,6 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F2856FA2646CF9D00438F13 /* main.cpp in Sources */,
+				9F4939482650FF2200E7C54E /* Bj_14592.cpp in Sources */,
+				9FE68E18264E952300C64208 /* Bj_10828.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +256,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -248,6 +268,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_LDFLAGS = (
+					"$(OTHER_LDFLAGS)",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
